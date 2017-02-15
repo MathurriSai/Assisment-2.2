@@ -1,0 +1,34 @@
+Explain in detail:
+● HDFS
+● Hadoop cluster
+● HDFS blocks
+
+
+
+HDFC: means Hadoop distributed File System where it acts as primary storage unit of Hadoop Applications where one can store a huge 
+amount of data across Hadoop clusters.since Hadooop is a low cost commodity node failures are usually common using HDFC one can retrive the data 
+from other systems.transfer of data are possible as well it enables the Hadoop to run even when there is a node failure.when a data is given as input
+then it breaks the data and put them into a number of blocks.from the blocks the data will be written to number fof servers.
+
+       The main purpose of HDFC is to to support applications with huge data whose storage exceeds reach ven terabytes.and it uses master slave
+architecture which mostly have a single master and many number of slaves.And in HDFS replication is possible where when one node fails we
+can retrive data from other machine.which makes its performance better as well fault tolerance.
+
+      It is a once write and many read format where data will be written once can be used for a great number of time. where as if there is 
+any sort of change then the whole data need to written again.as well since commodity machines are used the cost wise it isnot much expensive.
+
+
+
+HADOOP CLUSTER: In the past few years the number of data need to be stored have brrn increased drastically where there is no sustainable
+improvement in speed. In Hadoop clusters the unstructered data will be stored in a distributed format.These cluster's can run Hadoop dsitributed
+software at low cost commodity machines.among the commodity machine one will be assigned as name node and another machine as job tracker
+and these two will act as master where as other machines will act as slave-Data node and task tracker.And the data will be shared only among the nodes
+that were connected.
+
+    Clusters are mainly for boosting the speed of  the process. when the number of data ned to stored tends to increase then one can add up 
+ nodes in order to cope up with the data and speed.And even when there is failure in node tehn the data which have been duplicated to other system 
+ can be retrived.
+    
+ 
+HDFS BLOCKS: By default the size of each block will be 128MB in size.And will not be aware of what data to be stored it will even store raw
+data's the main concept was to split the storage block into number of units.
